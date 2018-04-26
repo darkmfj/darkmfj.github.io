@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     
     <title>Web Deploy 快速發佈站台到 IIS上 | darkmfj</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="iis" />
@@ -15,7 +16,7 @@
 <meta property="og:url" content="https://darkmfj.github.io/2018/04/26/webdeploy-to-iis/index.html">
 <meta property="og:site_name" content="darkmfj">
 <meta property="og:description" content="使用 visual studio 部屬 net 專案時候, 以往作法可能使用 [File System] 的方式: 先 publish 到 本地端 , 把檔案複製到遠端伺服器的站台目錄中… 如果程式調整頻繁,每一次更版動作就需要經過 publish =&amp;gt; 複製 =&amp;gt; 遠端進主機 =&amp;gt; 貼到\取代 站台檔案 ; 這一串動作，可能會花費不少時間在部屬上。 下面介紹如何使用 [Web">
-<meta property="og:locale" content="zh-TW">
+<meta property="og:locale" content="zh-tw">
 <meta property="og:image" content="https://darkmfj.github.io/2018/04/26/webdeploy-to-iis/2017-06-28_161804.jpg">
 <meta property="og:updated_time" content="2018-04-26T14:41:30.842Z">
 <meta name="twitter:card" content="summary">
@@ -56,6 +57,7 @@ ga('send', 'pageview');
     
     
 
+
 </head>
 
 <body>
@@ -80,13 +82,13 @@ ga('send', 'pageview');
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Inici</a>
+                                    <a class="main-nav-list-link" href="/">Home</a>
                                 </li>
                             
                                         <ul class="main-nav-list"></ul>
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
                                 </li>
                             
                         </ul>
@@ -94,7 +96,7 @@ ga('send', 'pageview');
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -115,8 +117,8 @@ ga('send', 'pageview');
         TRANSLATION: {
             POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'categories',
-            TAGS: 'etiquetes',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -142,7 +144,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    Sense categoria
+    uncategorized
     </h1>
 </div>
                         <div class="main-body-content">
@@ -237,6 +239,12 @@ ga('send', 'pageview');
 
     <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
     </section>
 
 
@@ -245,7 +253,7 @@ ga('send', 'pageview');
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>seguir:</p>
+        <p>follow:</p>
         <ul class="social-links">
             
                 
@@ -264,7 +272,7 @@ ga('send', 'pageview');
     
     
         <a href="/2017/06/01/arch-login-by-ssh/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">antic</strong>
+        <strong class="article-nav-caption">older</strong>
         <p class="article-nav-title">login archlinux by ssh</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
@@ -334,7 +342,7 @@ ga('send', 'pageview');
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">arxius</h3>
+        <h3 class="widget-title">archives</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li></ul>
         </div>
@@ -344,7 +352,7 @@ ga('send', 'pageview');
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">etiquetes</h3>
+        <h3 class="widget-title">tags</h3>
         <div class="widget">
             <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/arch/">arch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/golang/">golang</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iis/">iis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shortcut/">shortcut</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/">ssh</a><span class="tag-list-count">1</span></li></ul>
         </div>
@@ -354,7 +362,7 @@ ga('send', 'pageview');
             
                 
     <div class="widget-wrap widget-float">
-        <h3 class="widget-title">etiqueta cloud</h3>
+        <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
             <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/arch/" style="font-size: 10px;">arch</a> <a href="/tags/golang/" style="font-size: 10px;">golang</a> <a href="/tags/iis/" style="font-size: 10px;">iis</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/shortcut/" style="font-size: 10px;">shortcut</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
         </div>
@@ -383,6 +391,23 @@ ga('send', 'pageview');
     </div>
 </footer>
         
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://darkmfj.github.io/2018/04/26/webdeploy-to-iis/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
 
 
     
@@ -400,6 +425,7 @@ ga('send', 'pageview');
         <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
     
+
 
 
 <!-- Custom Scripts -->
