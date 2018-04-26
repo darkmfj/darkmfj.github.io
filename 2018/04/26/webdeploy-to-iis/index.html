@@ -3,16 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Etiqueta: android | darkmfj</title>
+    <title>Web Deploy 快速發佈站台到 IIS上 | darkmfj</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="darkmfj">
-<meta property="og:url" content="https://darkmfj.github.io/tags/android/index.html">
+        <meta name="keywords" content="iis" />
+    
+    <meta name="description" content="使用 visual studio 部屬 net 專案時候, 以往作法可能使用 [File System] 的方式: 先 publish 到 本地端 , 把檔案複製到遠端伺服器的站台目錄中… 如果程式調整頻繁,每一次更版動作就需要經過 publish =&amp;gt; 複製 =&amp;gt; 遠端進主機 =&amp;gt; 貼到\取代 站台檔案 ; 這一串動作，可能會花費不少時間在部屬上。 下面介紹如何使用 [Web">
+<meta name="keywords" content="iis">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web Deploy 快速發佈站台到 IIS上">
+<meta property="og:url" content="https://darkmfj.github.io/2018/04/26/webdeploy-to-iis/index.html">
 <meta property="og:site_name" content="darkmfj">
+<meta property="og:description" content="使用 visual studio 部屬 net 專案時候, 以往作法可能使用 [File System] 的方式: 先 publish 到 本地端 , 把檔案複製到遠端伺服器的站台目錄中… 如果程式調整頻繁,每一次更版動作就需要經過 publish =&amp;gt; 複製 =&amp;gt; 遠端進主機 =&amp;gt; 貼到\取代 站台檔案 ; 這一串動作，可能會花費不少時間在部屬上。 下面介紹如何使用 [Web">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:image" content="https://darkmfj.github.io/2018/04/26/webdeploy-to-iis/2017-06-28_161804.jpg">
+<meta property="og:updated_time" content="2018-04-26T14:41:30.842Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="darkmfj">
+<meta name="twitter:title" content="Web Deploy 快速發佈站台到 IIS上">
+<meta name="twitter:description" content="使用 visual studio 部屬 net 專案時候, 以往作法可能使用 [File System] 的方式: 先 publish 到 本地端 , 把檔案複製到遠端伺服器的站台目錄中… 如果程式調整頻繁,每一次更版動作就需要經過 publish =&amp;gt; 複製 =&amp;gt; 遠端進主機 =&amp;gt; 貼到\取代 站台檔案 ; 這一串動作，可能會花費不少時間在部屬上。 下面介紹如何使用 [Web">
+<meta name="twitter:image" content="https://darkmfj.github.io/2018/04/26/webdeploy-to-iis/2017-06-28_161804.jpg">
     
 
     
@@ -133,71 +142,102 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Etiqueta: <em>android</em>
+    Sense categoria
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-webdeploy-to-iis" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2017-04-12T13:41:49.000Z" itemprop="datePublished">2017-04-12</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2017/04/12/andorid-studio-shortcut/">andorid studio shortcut - must know</a>
+        Web Deploy 快速發佈站台到 IIS上
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/04/26/webdeploy-to-iis/" class="article-date">
+            <time datetime="2018-04-26T14:41:30.000Z" itemprop="datePublished">2018-04-26</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/iis/">iis</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>使用 visual studio 部屬 net 專案時候, 以往作法可能使用 [File System] 的方式: 先 publish 到 本地端 , 把檔案複製到遠端伺服器的站台目錄中…</p>
+<p>如果程式調整頻繁,每一次更版動作就需要經過 publish =&gt; 複製 =&gt; 遠端進主機 =&gt; 貼到\取代 站台檔案 ; 這一串動作，可能會花費不少時間在部屬上。</p>
+<p>下面介紹如何使用 [Web Deploy] , 應可以比上述的方式省去不少時間,在替換檔案前,也可以先瀏覽要替代檔案的差異,避免上錯版…問題</p>
+<!-- TOC -->
+<ul>
+<li><a href="#1-iis伺服器主機設置">1. IIS伺服器主機設置</a><ul>
+<li><a href="#11-安裝-管理服務">1.1. 安裝 管理服務</a></li>
+<li><a href="#12-設定-管理服務">1.2. 設定 管理服務</a></li>
+<li><a href="#13-web-deploy-3x">1.3. Web Deploy 3.X</a></li>
+<li><a href="#14-將-port-設定允許">1.4. 將 port 設定允許</a></li>
+<li><a href="#15-設一組可以遠端部屬的帳號建議">1.5. 設一組可以遠端部屬的帳號(建議)</a></li>
+</ul>
+</li>
+<li><a href="#2-遠端發佈">2. 遠端發佈</a><ul>
+<li><a href="#21-設定-publish">2.1. 設定 Publish</a></li>
+<li><a href="#22-一鍵發佈">2.2. 一鍵發佈</a></li>
+</ul>
+</li>
+</ul>
+<!-- /TOC -->
+<h1 id="1-IIS伺服器主機設置"><a href="#1-IIS伺服器主機設置" class="headerlink" title="1. IIS伺服器主機設置"></a>1. IIS伺服器主機設置</h1><p>(只有第一次才需要進行安裝的步驟)</p>
+<p>確認 <em>msdepsvc</em> 與 <em>wmsvc service</em> 服務有安裝</p>
+<p>Web Management Service (安裝完 管理服務就會有)<br>Web Deployment Agent Service (裝完Web Deploy 3.0就會有)</p>
+<h2 id="1-1-安裝-管理服務"><a href="#1-1-安裝-管理服務" class="headerlink" title="1.1. 安裝 管理服務"></a>1.1. 安裝 管理服務</h2><p>新增角色及功能精靈\勾選 網頁伺服器\管理工具\管理服務</p>
+<p><img src="2017-06-28_161804.jpg" alt=""></p>
+<h2 id="1-2-設定-管理服務"><a href="#1-2-設定-管理服務" class="headerlink" title="1.2. 設定 管理服務"></a>1.2. 設定 管理服務</h2><p>啟用遠端連線，識別認證可以勾選 IIS 管理員認證那一項次</p>
+<p><img src="2017-06-28_165909.jpg" alt=""></p>
+<h2 id="1-3-Web-Deploy-3-X"><a href="#1-3-Web-Deploy-3-X" class="headerlink" title="1.3. Web Deploy 3.X"></a>1.3. Web Deploy 3.X</h2><p>到官網下載 Web Deploy Tool<br><a href="https://www.iis.net/downloads/microsoft/web-deploy" target="_blank" rel="noopener">https://www.iis.net/downloads/microsoft/web-deploy</a></p>
+<p>請選完整,直接下一步安裝到底(裝完後 IIS 會有一個 管理服務委派 模組)<br><img src="2017-06-28_180658.jpg" alt=""></p>
+<h2 id="1-4-將-port-設定允許"><a href="#1-4-將-port-設定允許" class="headerlink" title="1.4. 將 port 設定允許"></a>1.4. 將 port 設定允許</h2><p>msdepsvc <em>80</em><br>wmsvc   <em>8172</em></p>
+<h2 id="1-5-設一組可以遠端部屬的帳號-建議"><a href="#1-5-設一組可以遠端部屬的帳號-建議" class="headerlink" title="1.5. 設一組可以遠端部屬的帳號(建議)"></a>1.5. 設一組可以遠端部屬的帳號(建議)</h2><p><em>電腦管理\本機使用者和群組</em></p>
+<p>新增一個帳戶 (這邊建立一個 deploy帳號 為例子)<br>PS. 若使用建立帳號 , 記得到遠端主機存放位置 設定存取權限</p>
+<p><img src="2017-09-29_121600.png" alt=""></p>
+<p><a href="http://www.iis.net/learn/publish/troubleshooting-web-deploy/web-deploy-error-codes" target="_blank" rel="noopener">http://www.iis.net/learn/publish/troubleshooting-web-deploy/web-deploy-error-codes</a></p>
+<h1 id="2-遠端發佈"><a href="#2-遠端發佈" class="headerlink" title="2. 遠端發佈"></a>2. 遠端發佈</h1><h2 id="2-1-設定-Publish"><a href="#2-1-設定-Publish" class="headerlink" title="2.1. 設定 Publish"></a>2.1. 設定 Publish</h2><p>回到 visual studio (下圖以vs2013為例), 新增 Publish 設定</p>
+<p><img src="2017-09-29_133340.png" alt=""></p>
+<p><strong>Site Name:</strong> 輸入在遠端主機的站台位置</p>
+<p><strong>User name\Password:</strong> 輸入有權限能寫入遠端主機的帳號</p>
+<p>最後按下 <strong>[Validate Connetion]</strong> 驗證連線是否成功<br>(如失敗,可以查看相關錯誤訊息,可以對照此 <a href="http://www.iis.net/learn/publish/troubleshooting-web-deploy/web-deploy-error-codes" target="_blank" rel="noopener">http://www.iis.net/learn/publish/troubleshooting-web-deploy/web-deploy-error-codes</a> 查看資料排除)</p>
+<h2 id="2-2-一鍵發佈"><a href="#2-2-一鍵發佈" class="headerlink" title="2.2. 一鍵發佈"></a>2.2. 一鍵發佈</h2><p>上述設定完成後,在左方會有 <strong>Preview</strong> </p>
+<p><img src="2017-09-29_133641.png" alt=""></p>
+<p>透過這個介面,可以檢視 <em>伺服器主機下的檔案</em> 跟 <em>我們這次新部屬的檔案</em> 有哪邊不同,<br>甚至可以只勾選 想要丟上去的的檔案進行發佈<br>(建議不要直接衝動 按下<strong>publish</strong> 按鈕，比對一下會更新那些檔案比較保險！)</p>
+<p>確認無誤後,就可以直接點下 <strong>publish</strong> 進行發佈。</p>
+<p>之後每當我們程式需要發佈到主機上,進行下面的步驟就可以了</p>
+<p>build -&gt; 打開 publish -&gt; preview 檔案異動 -&gt; publish</p>
+<p>以上。</p>
+
+        </div>
+        <footer class="article-footer">
             
 
 
-Star
-Name
-Shortcut
-Comment
 
-
-
-
-★★★★
-Parameter info (within method call arguments)
-Ctrl+P
-
-
-
-
-        </p>
+        </footer>
     </div>
 </article>
+
+    <section id="comments">
     
-        </div>
-    
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -218,6 +258,19 @@ Ctrl+P
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/06/01/arch-login-by-ssh/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">antic</strong>
+        <p class="article-nav-title">login archlinux by ssh</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         

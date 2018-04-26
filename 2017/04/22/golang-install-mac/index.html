@@ -15,6 +15,7 @@
 <meta property="og:url" content="https://darkmfj.github.io/2017/04/22/golang-install-mac/index.html">
 <meta property="og:site_name" content="darkmfj">
 <meta property="og:description" content="安裝 golang 在mac 上 官網安裝步驟 1.下載安裝包安裝來源 golang 1.8.1mac 可直接下載 pkg,透過介面安裝 2. $GOPATH$GOPATH 可以設置你的worksapce 存放位置。 3.設定 Golang 環境變數 for zsh.zshrc1234567891011# 在 zshrc 設定檔後面增加如下面的設置 , 這樣使用 zsh shell 時,設定才吃的">
+<meta property="og:locale" content="zh-TW">
 <meta property="og:updated_time" content="2017-04-22T13:43:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="golang install for mac">
@@ -77,13 +78,13 @@ ga('send', 'pageview');
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Home</a>
+                                    <a class="main-nav-list-link" href="/">Inici</a>
                                 </li>
                             
                                         <ul class="main-nav-list"></ul>
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">Quant a</a>
                                 </li>
                             
                         </ul>
@@ -91,7 +92,7 @@ ga('send', 'pageview');
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cercar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -112,8 +113,8 @@ ga('send', 'pageview');
         TRANSLATION: {
             POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'categories',
+            TAGS: 'etiquetes',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -139,7 +140,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    uncategorized
+    Sense categoria
     </h1>
 </div>
                         <div class="main-body-content">
@@ -176,12 +177,12 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p>安裝 golang 在mac 上</p>
-<p><a href="https://golang.org/doc/install" target="_blank" rel="external">官網安裝步驟</a></p>
-<h2 id="1-下載安裝包"><a href="#1-下載安裝包" class="headerlink" title="1.下載安裝包"></a>1.下載安裝包</h2><p><a href="https://golang.org/dl/" target="_blank" rel="external">安裝來源</a> golang 1.8.1<br>mac 可直接下載 pkg,透過介面安裝</p>
-<h2 id="2-GOPATH"><a href="#2-GOPATH" class="headerlink" title="2. $GOPATH"></a>2. $GOPATH</h2><p><a href="https://golang.org/doc/code.html#GOPATH" target="_blank" rel="external">$GOPATH</a> 可以設置你的worksapce 存放位置。</p>
-<h2 id="3-設定-Golang-環境變數-for-zsh"><a href="#3-設定-Golang-環境變數-for-zsh" class="headerlink" title="3.設定 Golang 環境變數 for zsh"></a>3.設定 Golang 環境變數 for zsh</h2><figure class="highlight sh"><figcaption><span>.zshrc</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"><span class="comment"># 在 zshrc 設定檔後面增加如下面的設置 , 這樣使用 zsh shell 時,設定才吃的進去。</span></div><div class="line"> </div><div class="line"><span class="comment"># 將 golang workspace 設定在 $HOME/go ,可改成你喜歡的。</span></div><div class="line"><span class="built_in">export</span> GOPATH=<span class="variable">$HOME</span>/go</div><div class="line"><span class="built_in">export</span> GOROOT=/usr/<span class="built_in">local</span>/go/bin</div><div class="line"><span class="comment"># 當安裝其他套件時,才能直接下 命令執行</span></div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOPATH</span>/bin</div><div class="line"><span class="comment"># 因有一些 預設package是放在一開始安裝的位置 /usr/local/go/bin</span></div><div class="line"><span class="comment"># EX: go,godoc,gofmt...等</span></div><div class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOROOT</span>/bin</div></pre></td></tr></table></figure>
+<p><a href="https://golang.org/doc/install" target="_blank" rel="noopener">官網安裝步驟</a></p>
+<h2 id="1-下載安裝包"><a href="#1-下載安裝包" class="headerlink" title="1.下載安裝包"></a>1.下載安裝包</h2><p><a href="https://golang.org/dl/" target="_blank" rel="noopener">安裝來源</a> golang 1.8.1<br>mac 可直接下載 pkg,透過介面安裝</p>
+<h2 id="2-GOPATH"><a href="#2-GOPATH" class="headerlink" title="2. $GOPATH"></a>2. $GOPATH</h2><p><a href="https://golang.org/doc/code.html#GOPATH" target="_blank" rel="noopener">$GOPATH</a> 可以設置你的worksapce 存放位置。</p>
+<h2 id="3-設定-Golang-環境變數-for-zsh"><a href="#3-設定-Golang-環境變數-for-zsh" class="headerlink" title="3.設定 Golang 環境變數 for zsh"></a>3.設定 Golang 環境變數 for zsh</h2><figure class="highlight sh"><figcaption><span>.zshrc</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 在 zshrc 設定檔後面增加如下面的設置 , 這樣使用 zsh shell 時,設定才吃的進去。</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 將 golang workspace 設定在 $HOME/go ,可改成你喜歡的。</span></span><br><span class="line"><span class="built_in">export</span> GOPATH=<span class="variable">$HOME</span>/go</span><br><span class="line"><span class="built_in">export</span> GOROOT=/usr/<span class="built_in">local</span>/go/bin</span><br><span class="line"><span class="comment"># 當安裝其他套件時,才能直接下 命令執行</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOPATH</span>/bin</span><br><span class="line"><span class="comment"># 因有一些 預設package是放在一開始安裝的位置 /usr/local/go/bin</span></span><br><span class="line"><span class="comment"># EX: go,godoc,gofmt...等</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$GOROOT</span>/bin</span><br></pre></td></tr></table></figure>
 <p>ps. go的預設安裝位置可能會因為安裝的方式不同,路徑也有可能不同,建議可以裝完後透過 where go 查看實際路徑</p>
-<h2 id="4-go-env"><a href="#4-go-env" class="headerlink" title="4. go env"></a>4. go env</h2><p>透過 go env 的命令 可以查看目前 go 相關設置的環境變數<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">shell&gt; go env</div><div class="line"></div><div class="line"><span class="comment">## result</span></div><div class="line">GOARCH=<span class="string">"amd64"</span></div><div class="line">GOBIN=<span class="string">"/Users/&#123;user&#125;/go/bin"</span></div><div class="line">GOEXE=<span class="string">""</span></div><div class="line">GOHOSTARCH=<span class="string">"amd64"</span></div><div class="line">GOHOSTOS=<span class="string">"darwin"</span></div><div class="line">GOOS=<span class="string">"darwin"</span></div><div class="line">GOPATH=<span class="string">"/Users/&#123;user&#125;/go"</span></div><div class="line">GORACE=<span class="string">""</span></div><div class="line">GOROOT=<span class="string">"/usr/local/go"</span></div><div class="line">GOTOOLDIR=<span class="string">"/usr/local/go/pkg/tool/darwin_amd64"</span></div><div class="line">GCCGO=<span class="string">"gccgo"</span></div><div class="line">...</div></pre></td></tr></table></figure></p>
+<h2 id="4-go-env"><a href="#4-go-env" class="headerlink" title="4. go env"></a>4. go env</h2><p>透過 go env 的命令 可以查看目前 go 相關設置的環境變數<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">shell&gt; go env</span><br><span class="line"></span><br><span class="line"><span class="comment">## result</span></span><br><span class="line">GOARCH=<span class="string">"amd64"</span></span><br><span class="line">GOBIN=<span class="string">"/Users/&#123;user&#125;/go/bin"</span></span><br><span class="line">GOEXE=<span class="string">""</span></span><br><span class="line">GOHOSTARCH=<span class="string">"amd64"</span></span><br><span class="line">GOHOSTOS=<span class="string">"darwin"</span></span><br><span class="line">GOOS=<span class="string">"darwin"</span></span><br><span class="line">GOPATH=<span class="string">"/Users/&#123;user&#125;/go"</span></span><br><span class="line">GORACE=<span class="string">""</span></span><br><span class="line">GOROOT=<span class="string">"/usr/local/go"</span></span><br><span class="line">GOTOOLDIR=<span class="string">"/usr/local/go/pkg/tool/darwin_amd64"</span></span><br><span class="line">GCCGO=<span class="string">"gccgo"</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure></p>
 
         </div>
         <footer class="article-footer">
@@ -203,7 +204,7 @@ ga('send', 'pageview');
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>follow:</p>
+        <p>seguir:</p>
         <ul class="social-links">
             
                 
@@ -220,20 +221,20 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2017/04/12/andorid-studio-shortcut/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
+        <a href="/2017/06/01/arch-login-by-ssh/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">més nou</strong>
         <p class="article-nav-title">
         
-            andorid studio shortcut - must know
+            login archlinux by ssh
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
     </a>
     
     
-        <a href="/2017/06/01/arch-login-by-ssh/" id="article-nav-older" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">login archlinux by ssh</p>
+        <a href="/2017/04/12/andorid-studio-shortcut/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">antic</strong>
+        <p class="article-nav-title">andorid studio shortcut - must know</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -248,6 +249,15 @@ ga('send', 'pageview');
         <h3 class="widget-title">recents</h3>
         <div class="widget">
             <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/04/26/webdeploy-to-iis/" class="title">Web Deploy 快速發佈站台到 IIS上</a></p>
+                            <p class="item-date"><time datetime="2018-04-26T14:41:30.000Z" itemprop="datePublished">2018-04-26</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -276,15 +286,6 @@ ga('send', 'pageview');
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/04/11/hello-world/" class="title">Hello World</a></p>
-                            <p class="item-date"><time datetime="2017-04-11T15:38:03.000Z" itemprop="datePublished">2017-04-11</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -302,9 +303,9 @@ ga('send', 'pageview');
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">arxius</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">3</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">四月 2017</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
@@ -312,9 +313,9 @@ ga('send', 'pageview');
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">tags</h3>
+        <h3 class="widget-title">etiquetes</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/arch/">arch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/golang/">golang</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shortcut/">shortcut</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/">ssh</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/arch/">arch</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/golang/">golang</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iis/">iis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/shortcut/">shortcut</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ssh/">ssh</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -322,9 +323,9 @@ ga('send', 'pageview');
             
                 
     <div class="widget-wrap widget-float">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">etiqueta cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/arch/" style="font-size: 10px;">arch</a> <a href="/tags/golang/" style="font-size: 10px;">golang</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/shortcut/" style="font-size: 10px;">shortcut</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
+            <a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/arch/" style="font-size: 10px;">arch</a> <a href="/tags/golang/" style="font-size: 10px;">golang</a> <a href="/tags/iis/" style="font-size: 10px;">iis</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/shortcut/" style="font-size: 10px;">shortcut</a> <a href="/tags/ssh/" style="font-size: 10px;">ssh</a>
         </div>
     </div>
 
@@ -344,7 +345,7 @@ ga('send', 'pageview');
                 <h1 class="logo-wrap">
                     <a href="/" class="logo"></a>
                 </h1>
-                <p>&copy; 2017 darkmfj</p>
+                <p>&copy; 2018 darkmfj</p>
                 <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
             </div>
         </div>
